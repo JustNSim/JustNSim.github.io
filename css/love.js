@@ -386,7 +386,7 @@
             var rec = s.record[k || "move"];
             var point = rec.point,
                 image = rec.image,
-                speed = rec.speed/3 || 3,
+                speed = rec.speed/2 || 5,
                 width = rec.width,
                 height = rec.height; 
 
@@ -399,10 +399,10 @@
         	ctx.restore();
 
             rec.point = new Point(i, j);
-            rec.speed = speed * 0.95;
+            rec.speed = speed * 0.45;
 
-            if (rec.speed < 2) {
-                rec.speed = 2;
+            if (rec.speed < 1) {
+                rec.speed = 1;
             }
             return i < x || j < y;
         },
