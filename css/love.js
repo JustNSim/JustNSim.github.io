@@ -169,7 +169,7 @@
             ctx.moveTo(0, 0);
             ctx.scale(0.75, 0.75);
             ctx.font = "12px 微软雅黑,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
-            ctx.fillText("Come Baby", 23, 10);
+            ctx.fillText("click the heart", 23, 10);
             ctx.restore();
         },
         clear: function() {
@@ -386,7 +386,7 @@
             var rec = s.record[k || "move"];
             var point = rec.point,
                 image = rec.image,
-                speed = rec.speed || 10,
+                speed = rec.speed/3 || 3,
                 width = rec.width,
                 height = rec.height; 
 
